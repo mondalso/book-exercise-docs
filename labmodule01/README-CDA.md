@@ -6,17 +6,16 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed at [PIOT-IN
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+The initial enviroment setup for CDA dev environment was created by cloning the [python-components](https://github.com/programming-the-iot) repository. After cloning a copy of the repository locally, a remote git repository was created and linked using URL. 
 
-What does your implementation do? 
+The native operating system of the working system is Windows 11. Windows Susbsystem for Linus(WSL) was chosen as the installation approach. Once the WSL was in place, Eclipse was the IDE platform chosen for the lifecycle of the project and installed. The local repositories were imported to Eclipse and PyDev was installed. Neccessary paths were set and config was put in place to enable python runs. 
 
-How does your implementation work?
+The first set of tests were to determine if the environment setup was working as expected. A new branch labmodule01 was created and part01 unit tests and integration tests were run. Once all tests passed, the branch was merged with the default branch main. 
 
 ### Code Repository and Branch
-
-NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
-
-URL: 
+ 
+Repository - piot-python-components [https://github.com/mondalso/piot-python-components.git](https://github.com/mondalso/piot-python-components.git)
+Branch - labmodule01 [https://github.com/mondalso/piot-python-components.git](https://github.com/mondalso/piot-python-components/tree/labmodule01)
 
 ### UML Design Diagram(s)
 
@@ -27,23 +26,10 @@ book [Programming the IoT](https://learning.oreilly.com/library/view/programming
 
 ### Unit Tests Executed
 
-NOTE: TA's will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
+- src/test/python/programmingtheiot/part01/unit/common/ConfigUtilTest.py
 
 ### Integration Tests Executed
 
-NOTE: TA's will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
-
-- 
-- 
-- 
+- src/test/python/programmingtheiot/part01/integration/app/ConstrainedDeviceAppTest.py
 
 EOF.
