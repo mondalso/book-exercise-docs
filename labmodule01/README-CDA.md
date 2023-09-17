@@ -12,8 +12,9 @@ The first set of tests were to determine if the environment setup was working as
 
 ### Code Repository and Branch
  
-Repository - piot-python-components [https://github.com/mondalso/piot-python-components.git](https://github.com/mondalso/piot-python-components.git)
-Branch - labmodule01 [https://github.com/mondalso/piot-python-components.git](https://github.com/mondalso/piot-python-components/tree/labmodule01)
+Repository - [piot-python-components](https://github.com/mondalso/piot-python-components.git)
+
+Branch - [labmodule01](https://github.com/mondalso/piot-python-components/tree/labmodule01)
 
 ### UML Design Diagram(s)
 
