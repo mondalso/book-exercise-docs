@@ -2,8 +2,6 @@
 
 ## Lab Module 01
 
-Be sure to implement all the PIOT-CDA-* issues (requirements) listed at [PIOT-INF-01-001 - Lab Module 01](https://github.com/orgs/programming-the-iot/projects/1#column-9974937).
-
 ### Description
 
 The initial enviroment setup for CDA dev environment was created by cloning the [python-components](https://github.com/programming-the-iot) repository. After cloning a copy of the repository locally, a remote git repository was created and linked using URL. 
@@ -19,10 +17,7 @@ Branch - labmodule01 [https://github.com/mondalso/piot-python-components.git](ht
 
 ### UML Design Diagram(s)
 
-NOTE: Include one or more UML designs representing your solution. It's expected each
-diagram you provide will look similar to, but not the same as, its counterpart in the
-book [Programming the IoT](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
-
+labmodule01 was about environment setup and there was no coding involved. Hence, there is no UML diagram included.
 
 ### Unit Tests Executed
 
