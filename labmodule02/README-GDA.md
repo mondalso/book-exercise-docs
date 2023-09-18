@@ -4,7 +4,7 @@
 
 ### Description
 
-The _GatewayDeviceApp_ class is the entry point of the application. This class was taken from the template which included _startApp()_, _stopApp()_ and _parseArgs()_ methods. A _main()_ method was added to the class to enable running as an application. It creates an instance of GatewayDeviceApp, calls _startApp()_, waits for a few seconds and then calls _stopApp()_.
+The *GatewayDeviceApp* class is the entry point of the application. This class was taken from the template which included _startApp()_, _stopApp()_ and _parseArgs()_ methods. A _main()_ method was added to the class to enable running as an application. It creates an instance of GatewayDeviceApp, calls _startApp()_, waits for a few seconds and then calls _stopApp()_.
 
 The _SystemPerformanceManager_ class is created to manage and log performance tasks. pollRate is an integer attribute that is retrieved from ConfigUtil and used for scheduling tasks. _startManager()_ and _stopManager()_ methods are used to log the status. An instance of _SystemPerformanceManager_ is created and managed by _ConstrainedDeviceApp_. The _startManager()_ and _stopManager()_ functions are connected to the _startApp()_ and _stopApp()_ functions so that it can be started and stopped with the application.
 
