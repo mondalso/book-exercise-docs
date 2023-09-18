@@ -4,9 +4,17 @@
 
 ### Description
 
-What does your implementation do? 
+The **ConstrainedDeviceApp** class is the entry point of the application. This class was taken from the template which included _startApp()_, _stopApp()_ and _parseArgs()_ methods. A _main()_ method was added to the class to enable running as an application. It creates an instance of ConstrainedDeviceApp, calls _startApp()_, waits for a few seconds and then calls _stopApp()_.
 
-How does your implementation work?
+The __SystemPerformanceManager__ class is created to manage and log performance tasks. pollRate is an integer attribute and locationID is a string attribute. These attributes are retrieved from ConfigUtil and used for scheduling tasks. _startManager()_ and _stopManager()_ methods are used to log the status. An instance of SystemPerformanceManager is created and managed by ConstrainedDeviceApp. The _startManager()_ and _stopManager()_ functions are connected to the _startApp()_ and _stopApp()_ functions so that it can be started and stopped with the application.
+
+The system utility functions are abstracted into a base class __BaseSystemUtilTask__. This class has attributes _name_ and _typeID_ and corresponding getter methods. There is also a template method _getTelemetryValue()_ defined. 
+
+The sub classes __SystemCpuUtilTask__ and __SystemMemUtilTask__ are derived from the class BaseSystemUtilTask. SystemCpuUtilTask implements the functionality to retrieve CPU utilization. While SystemMemUtilTask implements the functionality to retrieve JVM memory utilization. Both of these sub classes contain the inherited template method _getTelemetryValue()_. CPU utilization is retrieved using psutil and a float is returned in the _getTelemetryValue()_ method in SystemCpuUtilTask. JVM memory utilization is retrieved using psutil and a float is returned in the _getTelemetryValue()_ method in SystemMemUtilTask.
+
+SystemCpuUtilTask and SystemMemUtilTask are instantiated in SystemPerformanceManager and their respective _getTelemetryValue()_ methods are invoked in a method called _handleTelemetry()_. _handleTelemetry()_ is a method defined within SystemPerformanceManager. The scheduling of the tasks is implemented using the apscheduler library.
+
+Once all the classes were defined and connected, all the unit tests and integration tests from part01 were successfully run and passed. Hence, validating the effectiveness of the code.
 
 ### Code Repository and Branch
 
