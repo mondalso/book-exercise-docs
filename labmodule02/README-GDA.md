@@ -26,6 +26,7 @@ Branch - [labmodule02](https://github.com/mondalso/piot-java-components/tree/lab
 
 This is the UML diagram depicting the classes added to the GDA workbench as part of labmodule02 and the relationship between each class.
 ![GDA-labmodule02](https://github.com/mondalso/book-exercise-docs/assets/124481330/e94a402f-c6af-41e3-801a-34c8aa905c01)
+[link to UML](https://github.com/mondalso/book-exercise-docs/assets/124481330/e94a402f-c6af-41e3-801a-34c8aa905c01)
 
 ### Unit Tests Executed
 
