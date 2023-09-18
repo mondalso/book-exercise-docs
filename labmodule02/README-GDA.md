@@ -4,11 +4,18 @@
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
-
 What does your implementation do? 
+The GatewayDeviceApp class is the entry point of the application. This class was taken from the template which included startApp(), stopApp() and parseArgs() methods. A main() method was added to the class to enable running as an application. It creates an instance of GatewayDeviceApp, calls startApp(), waits for a few seconds and then calls stopApp().
 
-How does your implementation work?
+The SystemPerformanceManager class is created to manage and log performance tasks. pollRate is an integer attribute that is retrieved from ConfigUtil and used for scheduling tasks. startManager() and stopManager() methods are used to log the status. An instance of SystemPerformanceManager is created and managed by ConstrainedDeviceApp. The startManager() and stopManager() functions are connected to the startApp() and stopApp() functions so that it can be started and stopped with the application.
+
+The system utility functions are abstracted into a base class BaseSystemUtilTask. This class has attributes name and typeID and corresponding getter methods. There is also an abstract template getTelemetryValue() is defined. 
+
+The sub classes SystemCpuUtilTask and SystemMemUtilTask are derived from the class BaseSystemUtilTask. SystemCpuUtilTask implements the functionality to retrieve CPU utilization. While SystemMemUtilTask implements the functionality to retrieve JVM memory utilization. Both of these sub classes contain the inherited template method getTelemetryValue(). It retrieves the CPU utilization in SystemCpuUtilTask and returns the value as a float. It retrieves the JVM memory utilization in SystemMemUtilTask and returns the value as a float. 
+
+SystemCpuUtilTask and SystemMemUtilTask are instantiated in SystemPerformanceManager and their respective getTelemetryValue() methods are invoked in a method called handleTelemetry(). handleTelemetry() is a method defined within SystemPerformanceManager with a scheduler service that handles interval-based calls to retrieve each task's value.
+
+Once all the classes were defined and connected, all the unit tests and integration tests from part01 were successfully run and passed. Hence, validating the effectiveness of the code.
 
 ### Code Repository and Branch
 
@@ -19,8 +26,7 @@ Branch - [labmodule02](https://github.com/mondalso/piot-java-components/tree/lab
 ### UML Design Diagram(s)
 
 This is the UML diagram depicting the classes added to the GDA workbench as part of labmodule02 and the relationship between each class.
-![GDA-labmodule02](https://github.com/mondalso/book-exercise-docs/assets/124481330/7ced08fb-05c6-42da-9696-f737b735c049)
-
+![GDA-labmodule02](https://github.com/mondalso/book-exercise-docs/assets/124481330/e94a402f-c6af-41e3-801a-34c8aa905c01)
 
 ### Unit Tests Executed
 
