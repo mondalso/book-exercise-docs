@@ -26,7 +26,8 @@ Branch - [labmodule02](https://github.com/mondalso/piot-python-components/tree/l
 ### UML Design Diagram(s)
 
 This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule02 and the relationship between each class.
-![CDA-labmodule02](https://github.com/mondalso/images/blob/main/CDA-labmodule02.jpg)
+![CDA-labmodule02](https://drive.google.com/file/d/1qxWY3CWjogCi97aHrq18Y7XnDofI0Ynt/view?usp=sharing)
+[link to UML](https://drive.google.com/file/d/1qxWY3CWjogCi97aHrq18Y7XnDofI0Ynt/view?usp=sharing)
 
 
 ### Unit Tests Executed
