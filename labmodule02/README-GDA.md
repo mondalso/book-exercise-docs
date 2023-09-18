@@ -4,7 +4,6 @@
 
 ### Description
 
-What does your implementation do? 
 The GatewayDeviceApp class is the entry point of the application. This class was taken from the template which included startApp(), stopApp() and parseArgs() methods. A main() method was added to the class to enable running as an application. It creates an instance of GatewayDeviceApp, calls startApp(), waits for a few seconds and then calls stopApp().
 
 The SystemPerformanceManager class is created to manage and log performance tasks. pollRate is an integer attribute that is retrieved from ConfigUtil and used for scheduling tasks. startManager() and stopManager() methods are used to log the status. An instance of SystemPerformanceManager is created and managed by ConstrainedDeviceApp. The startManager() and stopManager() functions are connected to the startApp() and stopApp() functions so that it can be started and stopped with the application.
