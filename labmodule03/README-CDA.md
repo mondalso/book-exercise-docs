@@ -4,7 +4,7 @@
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+The objective of this lab module is to create classes for sensor and actuator simulation and manage the scheduling of system performance tasks, sensing tasks and actuation tasks as part of the constrained device application. There are three sensors that are being simulated, namely humidity sensor, temperature sensor and pressure sensor. There are two actuators that are being simulated, namely humidifier and hvac actuator. Readings for each of these sensors are extracted from a dataset of values between prescribed min and max limits.  
 
 What does your implementation do? 
 
@@ -39,8 +39,6 @@ New:
 - src/test/python/programmingtheiot/part02/unit/sim/TemperatureSensorSimTaskTest.py
 - src/test/python/programmingtheiot/part02/unit/sim/HumidifierActuatorSimTaskTest.py
 - src/test/python/programmingtheiot/part02/unit/sim/HvacActuatorSimTaskTest.py
-- 
-- 
 
 ### Integration Tests Executed
 
