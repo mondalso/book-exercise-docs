@@ -14,7 +14,7 @@ How does your implementation work?
 
 Repository - [piot-python-components](https://github.com/mondalso/piot-python-components.git)
 
-Branch - [labmodule02](https://github.com/mondalso/piot-python-components.git)
+Branch - [labmodule03](https://github.com/mondalso/piot-python-components/tree/labmodule03)
 
 ### UML Design Diagram(s)
 
