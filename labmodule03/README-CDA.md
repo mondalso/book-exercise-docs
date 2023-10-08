@@ -20,7 +20,7 @@ Branch - [labmodule03](https://github.com/mondalso/piot-python-components/tree/l
 
 This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule02 and the relationship between each class.
 ![CDA-labmodule03](https://github.com/mondalso/images/blob/main/CDA-labmodule03.jpg)
-[link to UML](https://github.com/mondalso/images/blob/main/CDA-labmodule02.jpg)
+[link to UML](https://github.com/mondalso/images/blob/main/CDA-labmodule03.jpg)
 
 
 ### Unit Tests Executed
