@@ -14,36 +14,45 @@ How does your implementation work?
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
+Repository - [piot-java-components](https://github.com/mondalso/piot-java-components.git)
 
-URL: 
+Branch - [labmodule05](https://github.com/mondalso/piot-java-components/tree/labmodule05)
 
 ### UML Design Diagram(s)
 
-NOTE: Include one or more UML designs representing your solution. It's expected each
-diagram you provide will look similar to, but not the same as, its counterpart in the
-book [Programming the IoT](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
-
+This is the UML diagram depicting the classes added to the GDA workbench as part of labmodule02 and the relationship between each class.
+![GDA-labmodule05](https://github.com/mondalso/images/blob/main/GDA-labmodule05.jpg)
+[link to UML](https://github.com/mondalso/images/blob/main/GDA-labmodule05.jpg)
 
 ### Unit Tests Executed
 
-NOTE: TA's will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
+From Previous:
 
-- 
-- 
-- 
+- src/test/java/programmingtheiot/part01/unit/common/ConfigUtilTest.java 
+- src/test/java/programmingtheiot/part01/unit/common/ConfigUtilTest.java 
+- src/test/java/programmingtheiot/part01/unit/system/SystemCpuUtilTaskTest.java
+- src/test/java/programmingtheiot/part01/unit/system/SystemMemUtilTaskTest.java
+
+New:
+
+- src/test/java/programmingtheiot/part02/unit/data/ActuatorDataTest.java
+- src/test/java/programmingtheiot/part02/unit/data/SensorDataTest.java
+- src/test/java/programmingtheiot/part02/unit/data/SystemPerformanceDataTest.java
+- src/test/java/programmingtheiot/part02/unit/data/SystemStateDataTest.java
+- src/test/java/programmingtheiot/part02/unit/data/DataUtilTest.java
 
 ### Integration Tests Executed
 
-NOTE: TA's will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
+From previous:
 
-- 
-- 
-- 
+- src/test/java/programmingtheiot/part01/integration/app/GatewayDeviceAppTest.java
+- src/test/java/programmingtheiot/part01/integration/system/SystemPerformanceManagerTest.java
+
+New:
+
+- src/test/java/programmingtheiot/part01/integration/system/SystemPerformanceManagerTest.java
+- src/test/java/programmingtheiot/part02/integration/data/DataIntegrationTest.java
+- src/test/java/programmingtheiot/part02/integration/app/DeviceDataManagerNoCommsTest.java
+- src/test/java/programmingtheiot/part01/integration/app/GatewayDeviceAppTest.java
 
 EOF.
