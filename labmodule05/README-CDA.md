@@ -2,7 +2,6 @@
 
 ## Lab Module 05
 
-Be sure to implement all the PIOT-CDA-* issues (requirements) listed at [PIOT-INF-05-001 - Lab Module 05](https://github.com/orgs/programming-the-iot/projects/1#column-10488421).
 
 ### Description
 
@@ -14,36 +13,60 @@ How does your implementation work?
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
+Repository - [piot-python-components](https://github.com/mondalso/piot-python-components.git)
 
-URL: 
+Branch - [labmodule05](https://github.com/mondalso/piot-python-components/tree/labmodule05)
 
 ### UML Design Diagram(s)
 
-NOTE: Include one or more UML designs representing your solution. It's expected each
-diagram you provide will look similar to, but not the same as, its counterpart in the
-book [Programming the IoT](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
-
+This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule02 and the relationship between each class.
+![CDA-labmodule05](https://github.com/mondalso/images/blob/main/CDA-labmodule05.jpg)
+[link to UML](https://github.com/mondalso/images/blob/main/CDA-labmodule05.jpg)
 
 ### Unit Tests Executed
 
-NOTE: TA's will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
+From previous:
 
-- 
-- 
-- 
+- src/test/python/programmingtheiot/part01/unit/common/ConfigUtilTest.py
+- src/test/python/programmingtheiot/part01/unit/system/SystemCpuUtilTaskTest.py
+- src/test/python/programmingtheiot/part01/unit/system/SystemMemUtilTaskTest.py
+- src/test/python/programmingtheiot/part02/unit/data/ActuatorDataTest.py
+- src/test/python/programmingtheiot/part02/unit/data/SensorDataTest.py
+- src/test/python/programmingtheiot/part02/unit/data/BaseIotDataTest.py
+- src/test/python/programmingtheiot/part02/unit/data/SystemPerformanceDataTest.py
+- src/test/python/programmingtheiot/part02/unit/sim/HumiditySensorSimTaskTest.py
+- src/test/python/programmingtheiot/part02/unit/sim/PressureSensorSimTaskTest.py
+- src/test/python/programmingtheiot/part02/unit/sim/TemperatureSensorSimTaskTest.py
+- src/test/python/programmingtheiot/part02/unit/sim/HumidifierActuatorSimTaskTest.py
+- src/test/python/programmingtheiot/part02/unit/sim/HvacActuatorSimTaskTest.py
+
+New:
+
+- src/test/python/programmingtheiot/part02/unit/sim/data/DataUtilTest.py 
 
 ### Integration Tests Executed
 
-NOTE: TA's will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
+From previous:
 
-- 
-- 
-- 
+- src/test/python/programmingtheiot/part01/integration/app/ConstrainedDeviceAppTest.py
+- src/test/python/programmingtheiot/part02/integration/system/SensorAdapterManagerTest.py
+- src/test/python/programmingtheiot/part02/integration/system/ActuatorAdapterManagerTest.py
+- src/test/python/programmingtheiot/part02/integration/app/DeviceDataManagerNoCommsTest.py
+- src/test/python/programmingtheiot/part02/integration/app/ConstrainedDeviceAppTest.py
+- src/test/python/programmingtheiot/part02/integration/emulated/SenseHatEmulatorQuickTest.py
+- src/test/python/programmingtheiot/part02/integration/emulated/HumidityEmulatorTaskTest.py
+- src/test/python/programmingtheiot/part02/integration/emulated/PressureEmulatorTaskTest.py
+- src/test/python/programmingtheiot/part02/integration/emulated/TemperatureEmulatorTaskTest.py
+- src/test/python/programmingtheiot/part02/integration/emulated/HumidifierEmulatorTaskTest.py
+- src/test/python/programmingtheiot/part02/integration/emulated/HvacEmulatorTaskTest.py
+- src/test/python/programmingtheiot/part02/integration/emulated/LedDisplayEmulatorTaskTest.py
+- src/test/python/programmingtheiot/part02/integration/emulated/SensorEmulatorManagerTest.py
+- src/test/python/programmingtheiot/part02/integration/emulated/ActuatorEmulatorManagerTest.py
+
+
+New:
+
+- src/test/python/programmingtheiot/part01/integration/system/SystemPerformanceManagerTest.py
+- src/test/python/programmingtheiot/part02/integration/data/DataIntegrationTest.py
 
 EOF.
