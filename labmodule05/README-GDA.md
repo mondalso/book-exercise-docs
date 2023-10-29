@@ -2,15 +2,9 @@
 
 ## Lab Module 05
 
-Be sure to implement all the PIOT-GDA-* issues (requirements) listed at [PIOT-INF-05-001 - Lab Module 05](https://github.com/orgs/programming-the-iot/projects/1#column-10488421).
-
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
-
-What does your implementation do? 
-
-How does your implementation work?
+Data containers are created for sensor and actuator data collection and management. SystemPerformanceManager is updated to use the SystemPerformanceData containers. A DataUtil module is created to assist in data conversion from and to json format. The DeviceDataManager class is updated to add functionality to handle the data being received. DeviceDataManager is instantiated inside GatewayDeviceApp to implement the start and stop functionality. 
 
 ### Code Repository and Branch
 
