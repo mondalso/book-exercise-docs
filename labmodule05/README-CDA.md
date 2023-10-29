@@ -5,11 +5,7 @@
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
-
-What does your implementation do? 
-
-How does your implementation work?
+SystemPerformanceManager is updated to the SystemPerformanceData container and a DataUtil class is created for Json conversion.
 
 ### Code Repository and Branch
 
