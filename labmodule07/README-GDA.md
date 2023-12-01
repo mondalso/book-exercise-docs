@@ -15,8 +15,8 @@ URL: https://github.com/mondalso/piot-java-components/tree/labmodule07
 
 ### UML Design Diagram(s)
 
-This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule02 and the relationship between each class.
-![CDA-labmodule04](https://github.com/mondalso/images/blob/main/GDA-labmodule07.drawio.png)
+This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule07 and the relationship between each class.
+![CDA-labmodule07](https://github.com/mondalso/images/blob/main/GDA-labmodule07.drawio.png)
 [link to UML](https://github.com/mondalso/images/blob/main/GDA-labmodule07.drawio.png)
 
 ### Integration Tests Executed
