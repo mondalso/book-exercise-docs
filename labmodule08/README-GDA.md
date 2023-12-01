@@ -2,48 +2,26 @@
 
 ## Lab Module 08
 
-Be sure to implement all the PIOT-GDA-* issues (requirements) listed at [PIOT-INF-08-001 - Lab Module 08](https://github.com/orgs/programming-the-iot/projects/1#column-10488501).
-
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+This implementation integrates a CoAP server into the Gateway Device Application (GDA) using the Eclipse Californium library. It allows the Constrained Device Application (CDA) to send sensor data to the GDA and retrieve actuator commands using CoAP request/response messaging.
 
-How does your implementation work?
+The CoAP server functionality is handled by the CoapServerGateway class, which provides an adapter to the Eclipse Californium library's CoapServer. The server manages CoAP resources and routes requests to specific resource handlers that process and respond to GET and PUT requests. Custom resource handlers were implemented to receive sensor data and system performance data from the CDA via PUT requests. Another handler allows the CDA to retrieve pending actuator commands via GET requests and supports observer notifications using CoAP. These CoAP resource handlers interface with the GDA's DeviceDataManager to process data and actuator messages. Overall, this enables CoAP-based integration between the CDA and GDA for sending telemetry and receiving actuator commands.
+
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
-
-URL: 
+URL: https://github.com/mondalso/piot-java-components/tree/labmodule08
 
 ### UML Design Diagram(s)
 
-NOTE: Include one or more UML designs representing your solution. It's expected each
-diagram you provide will look similar to, but not the same as, its counterpart in the
-book [Programming the IoT](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
-
-
-### Unit Tests Executed
-
-NOTE: TA's will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
+This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule08 and the relationship between each class.
+![GDA-labmodule08](https://github.com/mondalso/images/blob/main/GDA-labmodule08.drawio.png)
+[link to UML](https://github.com/mondalso/images/blob/main/GDA-labmodule08.drawio.png)
 
 ### Integration Tests Executed
 
-NOTE: TA's will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
-
-- 
-- 
-- 
+- CoapServerGatewayTest
 
 EOF.
