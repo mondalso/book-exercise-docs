@@ -2,48 +2,26 @@
 
 ## Lab Module 07
 
-Be sure to implement all the PIOT-GDA-* issues (requirements) listed at [PIOT-INF-07-001 - Lab Module 07](https://github.com/orgs/programming-the-iot/projects/1#column-10488499).
-
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+This implementation integrates the Eclipse Paho MQTT client library into the Gateway Device Application (GDA) to enable MQTT-based messaging between the GDA and other applications, such as the Constrained Device Application (CDA).
 
-What does your implementation do? 
-
-How does your implementation work?
+The GDA MQTT client is implemented in the MqttClientConnector class, which handles connecting to an MQTT broker, publishing messages, and subscribing to topics using the Eclipse Paho library. The MqttClientConnector is initialized based on configuration settings and its methods enable publishing messages and (un)subscribing to MQTT topics with specified QoS levels. It also implements callbacks to handle MQTT events like connection status changes, incoming messages, and delivery confirmations. The MqttClientConnector instance is created within the DeviceDataManager, which handles (un)subscribing from relevant MQTT topics when starting/stopping to receive messages published from other applications.
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
 
-URL: 
+URL: https://github.com/mondalso/piot-java-components/tree/labmodule07
 
 ### UML Design Diagram(s)
 
-NOTE: Include one or more UML designs representing your solution. It's expected each
-diagram you provide will look similar to, but not the same as, its counterpart in the
-book [Programming the IoT](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
-
-
-### Unit Tests Executed
-
-NOTE: TA's will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
+This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule02 and the relationship between each class.
+![CDA-labmodule04](https://github.com/mondalso/images/blob/main/GDA-labmodule07.drawio.png)
+[link to UML](https://github.com/mondalso/images/blob/main/GDA-labmodule07.drawio.png)
 
 ### Integration Tests Executed
 
-NOTE: TA's will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
+- MqttClientConnectorTest
 
-- 
-- 
-- 
 
 EOF.
