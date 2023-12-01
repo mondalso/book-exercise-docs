@@ -2,48 +2,24 @@
 
 ## Lab Module 09
 
-Be sure to implement all the PIOT-CDA-* issues (requirements) listed at [PIOT-INF-09-001 - Lab Module 09](https://github.com/orgs/programming-the-iot/projects/1#column-10488503).
-
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+This implementation integrates a CoAP client into the Constrained Device Application (CDA) using the Coapthon3 library. It allows the CDA to communicate with the Gateway Device Application's (GDA) CoAP server using CoAP request/response messaging.
 
-What does your implementation do? 
-
-How does your implementation work?
+The CoAP client functionality is handled by the CoapClientConnector class, which provides an adapter to the Coapthon3 library. The client can send CoAP GET and PUT requests to submit sensor data to the GDA and receive actuator commands. It also supports CoAP observations to wait for updates from the GDA instead of polling. The connector methods convert data between Python objects and JSON strings to interface with the GDA's data types. Callbacks route responses to the appropriate handlers. Overall, the CoAP client built on Coapthon3 enables integration between the CDA and GDA using CoAP for sending telemetry and receiving actuator commands.
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
-
-URL: 
+URL: https://github.com/mondalso/piot-python-components/tree/labmodule09
 
 ### UML Design Diagram(s)
-
-NOTE: Include one or more UML designs representing your solution. It's expected each
-diagram you provide will look similar to, but not the same as, its counterpart in the
-book [Programming the IoT](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
-
-
-### Unit Tests Executed
-
-NOTE: TA's will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
+This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule09 and the relationship between each class.
+![CDA-labmodule09](https://github.com/mondalso/images/blob/main/labmodule09-CDA.drawio.png)
+[link to UML](https://github.com/mondalso/images/blob/main/labmodule09-CDA.drawio.png)
 
 ### Integration Tests Executed
 
-NOTE: TA's will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
-
-- 
-- 
-- 
+- CoapClientConnectorTest 
+ 
 
 EOF.
