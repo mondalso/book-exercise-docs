@@ -2,48 +2,31 @@
 
 ## Lab Module 06
 
-Be sure to implement all the PIOT-CDA-* issues (requirements) listed at [PIOT-INF-06-001 - Lab Module 06](https://github.com/orgs/programming-the-iot/projects/1#column-10488434).
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+This implementation adds MQTT messaging capabilities to the Constrained Device Application (CDA) to enable publish/subscribe communication with other applications.The CDA can now connect to an MQTT broker, publish sensor data and status messages to specified topics, and subscribe to topics in order to receive incoming actuation commands. The Eclipse Paho MQTT Python client library is used to handle the MQTT protocol details.
 
-What does your implementation do? 
+Callbacks have been implemented to process connect/disconnect events and receive messages from subscribed topics. The MQTT client is initialized and connected/disconnected within the DeviceDataManager class.
 
-How does your implementation work?
+When starting up, the CDA subscribes to an "Actuator Commands" topic in order to receive any actuation directives. The CDA can now publish sensor messages to separate sensor data and status topics periodically based on configuration.
+
+This allows the CDA to integrate with other applications like the Gateway Device Application (GDA) using asynchronous, event-driven MQTT messaging. The publish/subscribe model facilitates flexible integration without direct dependencies between the applications.
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
-
-URL: 
+URL: https://github.com/mondalso/piot-python-components/tree/labmodule06
 
 ### UML Design Diagram(s)
 
-NOTE: Include one or more UML designs representing your solution. It's expected each
-diagram you provide will look similar to, but not the same as, its counterpart in the
-book [Programming the IoT](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
+This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule06 and the relationship between each class.
 
-
-### Unit Tests Executed
-
-NOTE: TA's will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
+![CDA-labmodule06](https://github.com/mondalso/images/blob/main/CDA-labmodule06.drawio.png)
+[link to UML](https://github.com/mondalso/images/blob/main/CDA-labmodule06.drawio.png)
 
 ### Integration Tests Executed
 
-NOTE: TA's will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
+- MqttClientConnectorTest
 
-- 
-- 
-- 
 
 EOF.
