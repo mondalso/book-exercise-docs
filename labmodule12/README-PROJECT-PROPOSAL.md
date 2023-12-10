@@ -1,37 +1,39 @@
-# Lab Module 12 - Semester Project Proposal
+# Automated Smart Home Lighting System
 
 ## Description
 
-Describe your idea in 1 paragraph (at least 2 or 3 sentences).
+Welcome to the Automated Smart Home Lighting System project! This system is designed to enhance user convenience and energy efficiency in managing home lighting. By integrating smart light bulbs with motion sensors, users can automate lighting control, schedule on/off times, and monitor real-time energy consumption.
 
-
+## Table of Contents
+- [Problem](#what---the-problem)
+- [Why](#why---who-cares)
+- [Technical Approach](#how---expected-technical-approach)
+- [Results](#results---expected-outcomes)
+- [Project Architecture](#project-architecture)
 
 ## What - The Problem 
 
-What problem are you trying to solve and why does it matter? Write 1 to 2 paragraphs in response.
-
-
+In many households, conventional lighting systems lack flexibility and energy efficiency. People often forget to turn off lights when leaving a room, leading to unnecessary energy consumption. Additionally, manually adjusting lighting settings can be inconvenient. The proposed solution aims to address these issues by introducing an intelligent lighting system that automatically adapts to user behavior and preferences.
 
 ## Why - Who Cares? 
 
-Why do you care about this particular problem? Write 1 to 2 paragraphs in response.
-
-
+Energy conservation and user convenience are at the forefront of this project. By automating lighting control, users can significantly reduce energy waste and lower electricity bills. The system caters to individuals who want a more efficient and user-friendly approach to managing their home lighting. Furthermore, in an era where sustainability is a key concern, this system contributes to a greener and more energy-conscious lifestyle.
 
 ## How - Expected Technical Approach
 
-How do you plan to tackle this problem technically?
-
-Include a high-level design diagram depicting your planned technical approach - it does not need to be final, but it must include the CDA, GDA, and cloud services you plan to use, as well as the protocol(s) you will use for communicating between the devices and the cloud.
-
-Write 1 to 2 paragraphs describing your diagram.
-
-
+Utilizing smart light bulbs equipped with motion sensors and integrating them with a central gateway device, the system enables remote lighting control and monitoring. The motion sensors detect occupancy in a room, automatically turning lights on or off based on user preferences. The gateway device communicates with cloud services to provide users with real-time insights into energy consumption and allows for scheduling lighting events.
 
 ## Results - Expected Outcomes 
 
-If your project is successful, what outcome do you expect (e.g. what will happen if everything works)? Write 1 to 2 paragraphs describing your expected outcomes.
+The success of the project will be measured by the following outcomes:
 
+- Users can remotely control and monitor their home lighting through a user-friendly cloud dashboard.
+- Motion sensors accurately detect occupancy, automating lighting control to enhance energy efficiency.
+- Scheduled on/off times can be programmed, allowing users to customize their lighting preferences.
+- Real-time insights into energy consumption are accessible, empowering users to make informed decisions about their lighting usage.
 
+The expected outcome is an Automated Smart Home Lighting System that not only simplifies daily tasks but also contributes to energy conservation and a more sustainable lifestyle.
 
-EOF.
+## Project Architecture
+
+![Project Architecture](project_architecture.png)
