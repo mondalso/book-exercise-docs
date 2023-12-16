@@ -64,8 +64,17 @@ Similarly, humidity levels within the facility are rigorously monitored. Should 
 
 
 ## Screen Shots Representing Cloud Services
-
+###Ubidots
 ![image](https://github.com/mondalso/piot-java-components/assets/124481330/017fadb7-3381-4d0f-833e-3e74e60e4791)
+
+###SenseHAT
+<img width="497" alt="image" src="https://github.com/mondalso/images/assets/124481330/c2724e7e-5548-4707-a783-007bdfded7d1">
+
+###GDA Console
+<img width="751" alt="image" src="https://github.com/mondalso/images/assets/124481330/0caa59d3-b88e-4259-8804-ad6b4bbcf412">
+
+###CDA Console
+<img width="905" alt="image" src="https://github.com/mondalso/images/assets/124481330/efefae64-72ec-4db0-ad00-2d4c10cd5d76">
 
 
 
