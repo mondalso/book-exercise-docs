@@ -2,48 +2,16 @@
 
 ## Lab Module 12 - Semester Project - GDA Components
 
-Be sure to implement all the PIOT-GDA-* issues (requirements) listed at [PIOT-INF-12-001 - Lab Module 12](https://github.com/orgs/programming-the-iot/projects/1#column-10488565).
-
 ### Description
+In Lab Module 12, the Gateway Device Application (GDA) securely connects Cloud Data Analytics (CDA) with cloud services, handling data processing, storage, and actuation event generation. It encrypts data transmission, processes system and sensor data from the CDA, and sends this data to the cloud. The GDA also generates unique actuation events based on custom algorithms and monitors its internal performance metrics. Designed for continuous operation, it ensures data integrity and responsiveness to cloud-based triggers, supported by comprehensive testing for reliability.
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
-
-What does your implementation do? 
-
-How does your implementation work?
-
-### Code Repository and Branch
-
-NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
-
-URL: 
+URL : [labmodule12](https://github.com/mondalso/piot-python-components/tree/labmodule12)
 
 ### UML Design Diagram(s)
 
-NOTE: Include one or more UML designs representing your solution. It's expected each
-diagram you provide will look similar to, but not the same as, its counterpart in the
-book [Programming the IoT](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
+This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule02 and the relationship between each class.
+![CDA-labmodule05]((https://github.com/mondalso/images/blob/main/GDA-labmodule11.drawio%20(1).png))
+[link to UML)(https://github.com/mondalso/images/blob/main/GDA-labmodule11.drawio%20(1).png)
 
-
-### Unit Tests Executed
-
-NOTE: TA's will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
-
-### Integration Tests Executed
-
-NOTE: TA's will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
-
-- 
-- 
-- 
 
 EOF.
