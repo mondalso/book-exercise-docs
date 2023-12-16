@@ -78,7 +78,7 @@ Similarly, humidity levels within the facility are rigorously monitored. Should 
 
 ### CDA Console 
 
-<img width="905" alt="image" src="https://github.com/mondalso/images/assets/124481330/efefae64-72ec-4db0-ad00-2d4c10cd5d76">
+https://github.com/mondalso/images/blob/main/image.png
 
 
 
