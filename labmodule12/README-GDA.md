@@ -10,8 +10,8 @@ URL : [labmodule12](https://github.com/mondalso/piot-python-components/tree/labm
 ### UML Design Diagram(s)
 
 This is the UML diagram depicting the classes added to the CDA workbench as part of labmodule02 and the relationship between each class.
-![CDA-labmodule05]((https://github.com/mondalso/images/blob/main/GDA-labmodule11.drawio%20(1).png))
-[link to UML)(https://github.com/mondalso/images/blob/main/GDA-labmodule11.drawio%20(1).png)
+![CDA-labmodule12](https://github.com/mondalso/images/assets/124481330/cc59a151-fd13-4e4e-bcbb-0b6c04d6378c)
+[link to UML](https://github.com/mondalso/images/blob/main/GDA-labmodule11.drawio%20(1).png)
 
 
 EOF.
