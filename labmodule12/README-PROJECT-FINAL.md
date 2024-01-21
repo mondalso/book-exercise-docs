@@ -11,7 +11,7 @@ Introducing the Gas Storage Facility IoT Monitoring System project, a cutting-ed
 
 ## What - The Problem 
 
-In many households, conventional lighting systems lack flexibility and energy efficiency. People often forget to turn off lights when leaving a room, leading to unnecessary energy consumption. Additionally, manually adjusting lighting settings can be inconvenient. The proposed solution aims to address these issues by introducing an intelligent lighting system that automatically adapts to user behavior and preferences.
+Gas storage facilities face critical challenges in maintaining optimal conditions and ensuring absolute safety. Traditional monitoring methods are often inadequate for detecting subtle yet critical changes that can lead to significant safety hazards or operational inefficiencies. This project aims to address the need for a sophisticated, real-time monitoring solution capable of detecting and swiftly responding to environmental changes, pressure variations, and potential risks.
 
 ## Why - Who Cares? 
 
