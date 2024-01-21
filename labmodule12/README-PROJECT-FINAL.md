@@ -15,8 +15,7 @@ Gas storage facilities face critical challenges in maintaining optimal condition
 
 ## Why - Who Cares? 
 
-Energy conservation and user convenience are at the forefront of this project. By automating lighting control, users can significantly reduce energy waste and lower electricity bills. The system caters to individuals who want a more efficient and user-friendly approach to managing their home lighting. Furthermore, in an era where sustainability is a key concern, this system contributes to a greener and more energy-conscious lifestyle.
-
+At the heart of this project are safety, regulatory compliance, and operational efficiency. By automating the monitoring and control systems within gas storage facilities, we aim to significantly elevate safety standards, prevent potential accidents, and minimize environmental impact. This system is crucial for facility operators committed to upholding stringent safety protocols, adhering to environmental regulations, and enhancing operational processes.
 
 
 ## How - Expected Technical Approach
